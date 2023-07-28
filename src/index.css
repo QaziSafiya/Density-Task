@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  
+  background-color: black;
+  font-family: 'Nunito', sans-serif;
+
+
+}
+@layer utilities{
+  .about {
+    position: relative;
+  
+    color:rgb(67, 97, 95);
+font-size: 17px;
+
+
+  }
+  .about:before {
+
+    content: "AboutMetaverse ";
+    position: absolute;
+    border-right: 2px solid #97FEED;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background-color: black;
+    color:white ;
+    border-color: #97FEED;
+animation: animate 5s steps(14) infinite;
+  }
+
+
+  .world {
+    position: relative;
+  color:rgb(67, 97, 95);
+
+font-size: 17px;
+
+
+  }
+  .world:before {
+
+    content: "TheWorld ";
+    position: absolute;
+    border-right: 2px solid #97FEED;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background-color: black;
+    color:white ;
+    border-color: #97FEED;
+animation: animate 5s steps(14) infinite;
+  }
+
+  .space {
+    position: relative;
+  
+    color:rgb(67, 97, 95);
+font-size: 17px;
+
+
+  }
+  .space:before {
+
+    content: "MetaverseWorld ";
+    position: absolute;
+    border-right: 2px solid #97FEED;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background-color: black;
+    color:white ;
+    border-color: #97FEED;
+animation: animate 5s steps(14) infinite;
+  }
+
+  .blog {
+    position: relative;
+  
+    color:rgb(67, 97, 95);
+font-size: 17px;
+
+
+  }
+  .blog:before {
+
+    content: "TrendingBlog ";
+    position: absolute;
+    border-right: 2px solid #97FEED;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background-color: black;
+    color:white ;
+    border-color: #97FEED;
+animation: animate 5s steps(14) infinite;
+  }
+
+
+
+  @keyframes animate {
+    40%,60%{
+      left: 100%;
+    }
+    100%{
+      left: 0%;
+    }
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+

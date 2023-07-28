@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Navbar from './Navbar';
+import About from './About';
+import Description from './Description';
+import Slides from './Slides';
+import Metaverse from './Metaverse';
+import MetaWorld from './MetaWorld';
+import Global from './Global';
+import Blog from './Blog';
+import Metaversend from './Metaversend';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar/>
+    <About/>
+<Description/>
+   <Slides/>
+<Metaverse/>
+<MetaWorld/>
+<Global/>
+<Blog/>
+<Metaversend/>
     </div>
   );
 }
