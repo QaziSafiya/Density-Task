@@ -21,6 +21,7 @@ function App() {
       <Blog />
       <Metaversend />
       {/* <Offer/> */}
+      {/* Footer */}
     </div>
   );
 }
